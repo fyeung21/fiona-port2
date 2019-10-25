@@ -1,0 +1,32 @@
+{
+  "name": "fiona-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyeung21/fiona-portfolio.git"
+  },
+  "author": "Fiona Yeung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fyeung21/fiona-portfolio/issues"
+  },
+  "homepage": "https://github.com/fyeung21/fiona-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.1.7",
+    "gulp-uglifycss": "^1.1.0",
+    "node-sass": "^4.12.0"
+  }
+}
