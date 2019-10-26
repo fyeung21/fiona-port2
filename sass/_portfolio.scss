@@ -36,10 +36,9 @@
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:5rem;
+    grid-gap:6.5rem 4.5rem;
     margin-top:5rem;
     .projects-grid-item {
-      border: 3px solid gray;
       max-width:100%;
 
       .card-img {
@@ -72,16 +71,23 @@
       }
       
       .card-text {
-        margin: 2rem 0;
+        margin: 2rem 0.5rem;
+        .card-title {
+            margin:0.5rem 0;
+        }
 
         .tech-tag {
           ul {
             display: flex;
+            margin:1rem 0;
             li {
               margin: 1rem;
-              border: 1px solid gray;
+              border: 1px solid $color__tag-background;
               padding: 5px 10px;
-              background-color: gray;
+              background-color: $color__tag-background;
+              &:first-child{
+                  margin-left:0;
+              }
             }
           }
         }

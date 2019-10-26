@@ -1,12 +1,11 @@
 html {
-  background-color: lightsteelblue;
+  background-color: $color__site-background;
   max-width: 1550px;
   margin: 0 auto;
 }
 
 .container {
   margin:4rem auto;
-  background-color:lightgray;
   h1 {
     text-align: center;
   }
