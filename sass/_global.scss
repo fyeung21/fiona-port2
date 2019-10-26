@@ -1,9 +1,14 @@
 html {
   background-color: lightsteelblue;
+  max-width: 1550px;
+  margin: 0 auto;
 }
 
-main {
-  background-color: #fff9fa;
-  max-width: 1180px;
-  margin: 0 auto;
+.container {
+  margin:4rem auto;
+  background-color:lightgray;
+  height:600px;
+  h1 {
+    text-align: center;
+  }
 }

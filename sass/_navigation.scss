@@ -1,0 +1,16 @@
+.header-container {
+    background-color: $color__header-background;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.main-navigation {
+    margin:10px;
+    ul {
+    display: flex;
+    li {
+        margin:0 10px;
+    }
+  }
+}
