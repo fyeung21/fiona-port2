@@ -1,0 +1,33 @@
+footer {
+  background-color: $color__footer-background;
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    h1 {
+        margin:1rem 0;
+    }
+    h2 {
+        margin:1rem 0;
+    }
+    ul {
+      li {
+        display: flex;
+        i {
+          font-size: 24px;
+        }
+        p {
+          font-size: 24px;
+          margin: 0 1rem 1rem;
+        }
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
