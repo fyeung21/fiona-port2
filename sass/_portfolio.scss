@@ -1,5 +1,5 @@
 .hero-container {
-    padding:8rem 0;
+  padding: 8rem 0;
   .hero-msg {
     text-align: left;
     text-transform: none;
@@ -15,18 +15,77 @@
       border-radius: 35px;
       padding: 10px 20px;
       a {
-          &:hover {
-              color:white;
-              background-color:lightcoral;
-          }
+        &:hover {
+          color: white;
+          background-color: lightcoral;
         }
+      }
       p {
         color: $color__text-heading-accent;
-        text-transform:capitalize;
-        font-size:25px;
-        font-weight:600;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: 600;
       }
-    
+    }
+  }
+}
+
+.projects-container {
+    margin:0 auto;
+    padding: 4rem 0;
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:5rem;
+    margin-top:5rem;
+    .projects-grid-item {
+      border: 3px solid gray;
+      max-width:100%;
+
+      .card-img {
+        display: block;
+        height: 300px;
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+      }
+
+      .coop {
+        background-image: url("../../assets/images/coop.png"); 
+        background-position: left;
+      }
+      .qod {
+        background-image: url("../../assets/images/qod.png");
+      }
+      .inhabit {
+        background-image: url("../../assets/images/inhabit.png");
+      }
+      .insta {
+        background-image: url("../../assets/images/instanews.png");
+        background-position: top;
+      }
+      .pong {
+        background-image: url("../../assets/images/pong.png");
+      }
+      .aloha {
+        background-image: url("../../assets/images/aloha.png");
+      }
+      
+      .card-text {
+        margin: 2rem 0;
+
+        .tech-tag {
+          ul {
+            display: flex;
+            li {
+              margin: 1rem;
+              border: 1px solid gray;
+              padding: 5px 10px;
+              background-color: gray;
+            }
+          }
+        }
+      }
     }
   }
 }
