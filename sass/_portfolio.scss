@@ -95,3 +95,23 @@
     }
   }
 }
+
+.skills-container {
+    .skills {
+        display:flex;
+        justify-content: space-between;
+        max-width:1400px;
+        margin:3rem auto;
+        h2 {
+            color:$color__text-body;
+            margin:3rem 0;
+        }
+        ul {
+            list-style:square;
+            margin:0 2rem;
+            li {
+                margin:1rem;
+            }
+        }
+    }
+}
