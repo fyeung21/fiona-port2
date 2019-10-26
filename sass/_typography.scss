@@ -1,0 +1,23 @@
+h1 {
+    font-size:48px;
+    font-family:$font__heading;
+    color:$color__text-heading;
+    text-transform:capitalize;
+}
+
+h2 {
+    font-size:40px;
+    font-family:$font__heading-accent;
+    color:$color__text-heading-accent;
+    text-transform:capitalize;
+}
+
+p {
+    font-size:18px;
+    font-family:$font__text-body;
+    color:$color__text-body;
+}
+
+a {
+    text-decoration: none;
+}

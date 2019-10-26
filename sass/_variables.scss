@@ -1,18 +1,21 @@
 // Colour
 
 $color_site_background: lightblue;
-$color_header:#fff;
-$color_nav_accent:lightcoral;
-$color_footer:#ffefe0;
-$color_text_main:black;
-$color_text_accent:gray;
-$color_link_hover:gray;
+$color__header-background:#fff;
+$color__footer-background:#ffefe0;
+$color__text-heading:#000;
+$color__text-heading-accent:lightcoral;
+$color__text-body:black;
+$color__text-accent:gray;
+$color__link-hover:gray;
 
 // Fonts
 
-$font_main: "Muli", Helvetica, sans-serif;
-$font_accent:"Quicksand", Helvetica, sans-serif;
-$font_logo: "Coco Gothic", Helvetica, sans-serif;
+$font__heading: "Quicksand", Helvetica, sans-serif;
+$font__heading-accent: "Quicksand", Helvetica, sans-serif;
+$font__text-body: "Quicksand", Helvetica, sans-serif;
+
+// $font_logo: "Coco Gothic", Helvetica, sans-serif;
 
 // Media
 
