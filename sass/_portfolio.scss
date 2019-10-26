@@ -1,0 +1,32 @@
+.hero-container {
+    padding:8rem 0;
+  .hero-msg {
+    text-align: left;
+    text-transform: none;
+    max-width: 55%;
+  }
+  ul {
+    display: flex;
+    max-width: 23%;
+    justify-content: space-between;
+    margin: 2rem 0;
+    li {
+      border: 4px solid $color__text-heading-accent;
+      border-radius: 35px;
+      padding: 10px 20px;
+      a {
+          &:hover {
+              color:white;
+              background-color:lightcoral;
+          }
+        }
+      p {
+        color: $color__text-heading-accent;
+        text-transform:capitalize;
+        font-size:25px;
+        font-weight:600;
+      }
+    
+    }
+  }
+}
