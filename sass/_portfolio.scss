@@ -3,7 +3,7 @@
   .hero-msg {
     text-align: left;
     text-transform: none;
-    max-width: 55%;
+    max-width: 60%;
   }
   ul {
     display: flex;
@@ -31,14 +31,12 @@
 }
 
 .projects-container {
-    margin:0 auto;
-    padding: 4rem 0;
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap:6.5rem 4.5rem;
     margin-top:5rem;
-    .projects-grid-item {
+    .projects-item {
       max-width:100%;
 
       .card-img {
@@ -97,21 +95,18 @@
 }
 
 .skills-container {
-    .skills {
-        display:flex;
-        justify-content: space-between;
-        max-width:1400px;
-        margin:3rem auto;
+    .skill-grid {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin:3rem 4rem;
+        border: 1px solid;
         h2 {
             color:$color__text-body;
-            margin:3rem 0;
+            margin:1rem 0;
         }
-        ul {
-            list-style:square;
-            margin:0 2rem;
-            li {
-                margin:1rem;
-            }
+        .skill-item {
+          border: 1px solid;
+          padding:1rem 2rem;
         }
     }
 }
