@@ -14,17 +14,18 @@ h2 {
 
 h3 {
     font-size:28px;
-    font-family:$font__text-body;
-    color:$color__text-body;
+    font-family:$font__main;
+    color:$color__text-main;
     text-transform:capitalize;
 }
 
 p {
     font-size:18px;
-    font-family:$font__text-body;
-    color:$color__text-body;
+    font-family:$font__main;
+    color:$color__text-main;
 }
 
 a {
     text-decoration: none;
+    color:$color__text-main;
 }

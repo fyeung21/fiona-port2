@@ -1,20 +1,26 @@
 // Colour
 
-$color__site-background: lightsteelblue;
-$color__header-background:#fff;
-$color__footer-background:#ffefe0;
+$color__site-background: #fffefd;
+$color__header-background:$color__site-background;
+$color__footer-background:#f8fafc;
+//fffefd warmer palest white
+//d8dae2 pale grey
+//f8fafc palest cool white
+
+
+$color__text-main:black;
+$color__text-accent:#fff;
 $color__text-heading:#000;
-$color__text-heading-accent:lightcoral;
-$color__text-body:black;
-$color__text-accent:gray;
-$color__link-hover:gray;
-$color__tag-background:rgb(106, 93, 182);
+$color__text-heading-accent:teal;
+$color__tag-background:$color__text-heading-accent;
+//80bbc5 teal
+//99c8d0 lighter teal
 
 // Fonts
 
-$font__heading: "Quicksand", Helvetica, sans-serif;
-$font__heading-accent: "Quicksand", Helvetica, sans-serif;
-$font__text-body: "Quicksand", Helvetica, sans-serif;
+$font__main: "Quicksand", Helvetica, sans-serif;
+$font__heading: $font__main;
+$font__heading-accent: $font__main;
 
 // Media
 
