@@ -1,5 +1,6 @@
 .hero-container {
-  padding: 8rem 0;
+  padding: 10rem 0;
+  margin-bottom: 20rem;
   .hero-msg {
     text-align: left;
     text-transform: none;
@@ -39,6 +40,7 @@
       max-width: 100%;
       border: 2px solid $color__site-border;
       border-radius: 5px;
+      box-shadow: 5px 5px 10px $color__box-shadow;
 
       .card-img {
         display: block;
@@ -127,12 +129,14 @@
 }
 
 .skills-container {
+  margin: 15rem 5rem;
   .skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 3rem 4rem;
     border: 1px solid $color__site-border;
     border-radius: 5px;
+    box-shadow: 3px 3px 10px lightgray;
     h2 {
       color: $color__text-main;
       margin: 1rem 0;
