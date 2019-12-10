@@ -1,31 +1,38 @@
 .about-me {
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 3rem 5rem;
   h1 {
     text-align: center;
   }
 }
-.about-me-container {
+.about-flex-container {
   display: flex;
-  margin: 3rem 0;
-
+  margin: 5rem auto 10rem;
   .description {
     max-width: 50%;
-    margin: 2rem 3rem;
+    margin: 2rem 2rem 3rem;
+    p {
+      margin-right: 2rem;
+    }
     .resume {
-      margin: 2rem 0;
-      font-size:26px;
+      font-size: 25px;
       border: 4px solid $color__text-heading-accent;
       border-radius: 35px;
+      width: 100px;
       padding: 10px 20px;
+      margin: 2rem 0;
+      &:hover {
+        color: white;
+        background-color: $color__text-heading-accent;
+      }
     }
   }
   .about-img {
     background-image: url("../../assets/images/me.png");
-    width: 100%;
-    height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
   }
 }
