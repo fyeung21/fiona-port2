@@ -1,16 +1,34 @@
 .header-container {
-    background-color: $color__header-background;
-    display: flex;
-    justify-content: space-between;
-    margin:0 auto;
+  background-color: $color__header-background;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .main-navigation {
-    margin:10px;
-    ul {
-    display: flex;
+  margin: 10px;
+  ul {
+    display: inline-flex;
     li {
-        margin:0 10px;
+      margin: 0 10px;
+      //   &:hover {
+      //     border-bottom: 2px solid black;
+      //     padding-bottom: 10px;
+      //     // position: absolute;
+      //   }
+
+      &::before {
+        transition: 300ms;
+        height: 2px;
+        content: "";
+        position: absolute;
+        background-color: black;
+        width: 0%;
+        top: 30px;
+      }
+      &:hover::before {
+        width: 100%;
+      }
     }
   }
 }
