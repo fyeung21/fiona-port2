@@ -1,9 +1,13 @@
 .about-me {
-  margin: 3rem 5rem;
+  margin: 3rem 0;
+  @include tablet {
+    margin: 3rem 5rem;
+  }
   h1 {
     text-align: center;
   }
 }
+
 .about-flex-container {
   display: flex;
   flex-direction: column;
@@ -14,8 +18,10 @@
   }
   .description {
     order: 2;
-    text-align: center;
     margin: 3rem 2rem;
+    @include tablet {
+      text-align: center;
+    }
     @include desktop {
       order: 1;
       max-width: 50%;

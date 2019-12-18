@@ -1,7 +1,9 @@
 footer {
   background-color: $color__footer-background;
   border-radius: 5px;
-  margin: 0 2rem;
+  @include tablet {
+    margin: 0 2rem;
+  }
   @include desktop {
     margin: 0 5rem;
   }
