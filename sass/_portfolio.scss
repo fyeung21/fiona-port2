@@ -4,7 +4,9 @@
   .hero-msg {
     text-align: left;
     text-transform: none;
-    max-width: 60%;
+    @include desktop {
+      max-width: 70%;
+    }
   }
   ul {
     display: flex;
@@ -33,9 +35,14 @@
 .projects-container {
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 6.5rem 4.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2.5rem 0;
+    @include desktop {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 6.5rem 4.5rem;
+      margin-top: 5rem;
+    }
     .projects-item {
       max-width: 100%;
       border: 2px solid $color__site-border;
@@ -129,14 +136,20 @@
 }
 
 .skills-container {
-  margin: 15rem 5rem;
+  margin: 10rem 0;
+  @include desktop {
+    margin: 15rem 5rem;
+  }
   .skill-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 3rem 4rem;
+    margin: 3rem 2.5rem;
     border: 1px solid $color__site-border;
     border-radius: 5px;
     box-shadow: 3px 3px 10px lightgray;
+    @include desktop {
+      margin: 3rem 4rem;
+    }
     h2 {
       color: $color__text-main;
       margin: 1rem 0;
