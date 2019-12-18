@@ -6,12 +6,26 @@
 }
 .about-flex-container {
   display: flex;
-  margin: 5rem auto 10rem;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+    margin: 5rem auto 10rem;
+  }
   .description {
-    max-width: 50%;
-    margin: 2rem 2rem 3rem;
+    order: 2;
+    text-align: center;
+    margin: 3rem 2rem;
+    @include desktop {
+      order: 1;
+      max-width: 50%;
+      margin: 2rem 2rem 3rem;
+      text-align: left;
+    }
     p {
-      margin-right: 2rem;
+      @include desktop {
+        margin-right: 2rem;
+      }
     }
     .resume {
       font-size: 25px;
@@ -19,7 +33,10 @@
       border-radius: 35px;
       width: 100px;
       padding: 10px 20px;
-      margin: 2rem 0;
+      margin: 2rem auto;
+      @include desktop {
+        margin: 2rem 0;
+      }
       &:hover {
         color: white;
         background-color: $color__text-heading-accent;
@@ -27,12 +44,19 @@
     }
   }
   .about-img {
+    order: 1;
     background-image: url("../../assets/images/me.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 5px;
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin-top: 3rem;
+    @include desktop {
+      order: 2;
+      margin-top: 0;
+      height: 500px;
+    }
   }
 }
